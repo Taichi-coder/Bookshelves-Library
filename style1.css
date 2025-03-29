@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(240, 230, 230);
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 5px;
+    background-color: rgb(32, 32, 32);
+    height: 90px;
+    align-items: center;
+    padding-inline: 10px;
+    margin: 0.4rem 0.2rem;
+    border-radius: 7px;
+    z-index: 1;
+}
+
+.headerdiv {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.headerdiv img {
+    width: 170px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.headerdiv h2 {
+    font-family: "Big Shoulders Inline";
+    color: rgb(27, 27, 27);
+    font-size: 0.8rem;
+    position: absolute;
+    top: 56px;
+    left: 44px;
+}
+
+header .create1 {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header .create1 p {
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    padding: 7px 0;
+    padding-inline: 15px;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    background-color: whitesmoke;
+    font-family: "Big Shoulders Inline",'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header a:hover, header a:focus-within {
+    background-color: black;
+    color: whitesmoke;
+    transition: all 0.3s linear;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    margin-inline: auto;
+    width: 100%;
+}
+
+.container {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 99%;
+    margin: 2rem auto;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.container .thead2 {
+    font-weight: 600;
+}
+
+.container .thead3 {
+    font-size: 1rem;
+    color: rgb(34, 34, 34);
+}
+
+.thead {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    border-top: 2px solid black;
+}
+
+.thead:first-child {
+    border: none;
+}
+
+.thead p {
+    border-left: 2px solid black;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.thead .sn {
+    border: none;
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thead .au {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thead .bok {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thead .boy {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thead .nop {
+    width: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thead .det {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thead .det a {
+    color: black;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.thead .det a:hover {
+    opacity: 0.7;
+}
+
+.thead .act {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.thead .act a {
+    text-decoration: none;
+    background-color: black;
+    color: whitesmoke;
+    padding: 0.2rem 0.7rem;
+    border-radius: 5px;
+}  
+
+.pagination {
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: "Big Shoulders Stencil";
+    padding: 0.7rem 0.9rem;
+    border-left: 2px solid black;
+}
+
+.pagination a:first-child {
+    border: none;
+}
+
+.pagination a:hover,  .pagination a:focus, .pagination a:focus-within {
+    opacity: 0.6;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.logout {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(126, 122, 122);
+    font-family: "Big Shoulders Inline",'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 15px auto;
+    width: 17%;
+}
+
+.logout:hover, .logout:focus-within {
+    background-color: black;
+    color: whitesmoke;
+    transition: all 0.3s linear;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0.9rem 0;
+    background-color: rgb(32, 32, 32);
+    margin: 0.2rem 0.2rem;
+    border-radius: 7px;
+    font-family: "Big Shoulders Inline", sans-serif;
+    color: whitesmoke;
+    position: sticky;
+    bottom: 3px;
+    font-size: 1.4rem;
+}
+
+/* || MEDIA QUERIE */
+@media screen and (min-width: 300px){
+    .thead {
+     font-size: 12px;
+    }
+ 
+    .container .thead3 {
+     font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 576px){
+   .thead {
+    font-size: 0.7rem;
+   }
+
+   .container .thead3 {
+    font-size: 0.7rem;
+   }
+}
+
+@media screen and (min-width: 608px){
+    .thead {
+     font-size: 0.8rem;
+    }
+ 
+    .container .thead3 {
+     font-size: 0.8rem;
+    }
+ }
+
+@media screen and (min-width: 768px) {
+    .thead {
+        font-size: 0.9rem;
+    }
+    
+    .container .thead3 {
+        font-size: 0.9rem;
+    }
+}
+
+/* || LARGE */
+
+@media screen  and (min-width: 992px){
+    .thead {
+        font-size: 1.1rem;
+    }
+    
+    .container .thead3 {
+        font-size: 1.1rem;
+    }
+}
